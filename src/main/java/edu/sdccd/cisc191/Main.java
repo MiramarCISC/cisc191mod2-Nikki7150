@@ -1,7 +1,9 @@
 package edu.sdccd.cisc191;
 
+/* replaced with import java.util.*;
 import java.util.Arrays;
-import java.util.List;
+import java.util.List; */
+import java.util.*;
 
 import static edu.sdccd.cisc191.StudentAnalyzer.*;
 
