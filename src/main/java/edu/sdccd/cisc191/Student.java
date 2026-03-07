@@ -1,26 +1,31 @@
 package edu.sdccd.cisc191;
 
 public class Student {
-    /***Fields must be private
-    Fields:
-    name
-            gpa
-    id
+    /* organized notes
+    Private Fields:
+    - name
+    - gpa
+    - id
+
     Constructor must validate:
-    name not empty
-    gpa between 0–4
-    id positive
-    Invalid input → throw IllegalArgumentException
+    - name not empty
+    - gpa between 0–4
+    - id positive
+    If invalid input → throw IllegalArgumentException
+    
     Must include getters
-    Override toString()***/
+    
+    Override toString() */
+
     private final String name;
     private final double gpa;
     private final int id;
 
     public Student(String name, double gpa, int id) {
+        /* moving this to after the constructor validation 
         this.name = name;
         this.gpa = gpa;
-        this.id = id;
+        this.id = id; */
 
         if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Student name cannot be null or empty");
@@ -33,6 +38,10 @@ public class Student {
         if (id <= 0) {
             throw new IllegalArgumentException("Student id cannot be lesser than 0");
         }
+
+        this.name = name;
+        this.gpa = gpa;
+        this.id = id;
     }
 
 

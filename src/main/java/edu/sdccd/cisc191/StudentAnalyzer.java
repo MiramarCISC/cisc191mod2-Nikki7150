@@ -1,8 +1,10 @@
 package edu.sdccd.cisc191;
 
+/* replacing with import java.util.*;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
+import java.util.List; */
+import java.util.*;
 
 public class StudentAnalyzer {
     static List<Student> filter(List<Student> list, StudentFilter filter) {
